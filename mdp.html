@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+        <title>PasswordChecker</title>
+        <link href="mdp.css" rel="stylesheet">
+        
+        
+</head>
+
+<body>
+    <p class mdpuser>Username = Lossa & Password = LossaLos</p>
+    <div class="div1">
+        <p class="log">Welcome user could you log in ?</p>
+        <form>
+            <label for="Username">Username :</label>
+            <input type="Username" id="Username" name="Username">
+            <br>
+            <label for="Password">Password :</label>
+            <input type="Password" id="Password" name="Password">
+            <br>
+            </script>
+            <button class="button" type="button" onclick="PasswordCheck()">Login</button>
+            <p id="Login">  </p>
+            
+            
+            <script>
+            let resultat =document.getElementById("Login")
+            function PasswordCheck() {
+               
+                let Username = document.getElementById("Username").value;
+                let Password = document.getElementById("Password").value;
+                
+                let adminUsename  = 'Lossa';
+                let adminPassword = 'LossaLos'
+
+                if ((Username===adminUsename)&&(Password===adminPassword)) { 
+                    resultat.innerHTML = "Welcome Admin"; 
+                 } 
+                 else { resultat.innerHTML = "Acess denied, Usename and password are hiden in the website";
+                }       
+                
+            }</script>
+        </form>
+    </div>
+</body>
